@@ -1,0 +1,51 @@
+{
+  "name": "front_end_capstone",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "react-dev": "webpack -d --watch",
+    "seed": "node server/db.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "6": "0.0.1",
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "jest": "^25.1.0",
+    "jest-environment-enzyme": "^7.1.2",
+    "jest-enzyme": "^7.1.2",
+    "lorem-ipsum": "^2.0.3",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.9",
+    "node": "^13.6.0",
+    "npm": "^6.13.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "reactstrap": "^8.4.1",
+    "webpack": "^4.41.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "webpack-cli": "^3.3.10"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
+  }
+}
