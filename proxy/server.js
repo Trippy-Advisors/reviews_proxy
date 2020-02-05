@@ -33,4 +33,15 @@ app.get("/reviews/hotels/:hotelId/", (req, res) => {
     });
 });
 
+app.get("/gallery/:hotelId/", (req, res) => {
+  axios
+    .get("http://localhost:6969/gallery/" + req.params.hotelId)
+    .then(response => {
+      res.send(response.data);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
