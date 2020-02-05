@@ -1,0 +1,22 @@
+#app {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(10px, auto);
+}
+
+#main {
+  position: none;
+}
+#app-topbanner {
+  grid-column: 1;
+  grid-row: 1;
+}
+#calendar {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#reviews {
+  grid-column: 1;
+  grid-row: 3;
+}

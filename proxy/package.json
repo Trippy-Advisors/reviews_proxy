@@ -8,14 +8,14 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "nodemon server.js",
     "react-dev": "webpack -d --watch",
-    "seed": "node server/db.js",
     "test": "jest"
   },
   "dependencies": {
     "6": "0.0.1",
     "axios": "^0.19.2",
+    "circular-json": "^0.5.9",
     "express": "^4.17.1",
     "install": "^0.13.0",
     "jest": "^25.1.0",
