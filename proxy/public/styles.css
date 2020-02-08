@@ -1,28 +1,33 @@
-#app {
-  display: grid;
-  grid-row-gap: 20px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: minmax(10px, auto);
+#main,
+#topbanner {
+  position: static;
 }
 
-#main {
-  position: none;
-}
-#app-topbanner {
-  grid-column: 1;
-  grid-row: 1;
-}
-#app-calendar {
-  grid-column: 1;
-  grid-row: 2;
-}
-#app-gallery {
-  grid-column: 1;
-  grid-row: 3;
+#app-gallery-calendar {
+  display: flex;
 }
 
+#gallery {
+  padding-left: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+#you-may-also-like {
+  padding-top: 15px;
+  padding-right: 80px;
+  width: 1200px;
+}
 #reviews {
-  max-width: 60%;
-  grid-column: 1;
-  grid-row: 4;
+  padding-top: 15px;
+  position: relative;
+}
+
+#reviews-section {
+  display: flex;
+}
+
+#add-static {
+  width: 420px;
+  padding-top: 10px;
 }
